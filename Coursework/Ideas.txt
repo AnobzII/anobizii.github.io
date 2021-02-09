@@ -1,0 +1,30 @@
+Pick your hero.
+
+Mage
+Warrior
+Healer
+Dog
+
+Mage:
+
+Equipped with staff, 340 years old, comes from olde England, studied under the great Marlin (Merlin when he changed into a fish, go watch Sword in the Stone). 
+Attack is a ball of lightning, Defense is magic shroud
+
+Warrior:
+
+Equipped with a sword and shield, 20 years old, from Hungary, Learned to fight under some random coat of arms.
+Attack is Sword swipe, defense is with shield that was forged in the fires of Mordor.
+
+Dog:
+
+Equipped with super dog senses, called Skye, She's a good girl, Loves a good clapping, Girl dogs can be heroes too, Has a long tail and short nose.
+Attack is dog bite, defense is dog bark
+
+Ideas:
+
+Time out links, Go back that only shows for 30 seconds.
+
+all links in one shell so webpage address doesn't change from webpage.com to webpage.com/dog/page1 etc... 
+
+Look at cookies to soft save data 
+
