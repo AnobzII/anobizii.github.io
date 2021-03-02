@@ -29,7 +29,7 @@ p {
     height: 112px;
     position: fixed;
     background-color: #C0CEDD;
-    border: 1px solid #888;
+    border: 1px solid #E0E6EE;
     }
 	
 #navigation {
@@ -39,7 +39,7 @@ p {
     width: 242px;
     height: 100%;
     position: fixed;
-    border: 1px solid #888;
+    border: 1px solid #E0E6EE;
 	background-color: #C0CEDD;
     }
 	
