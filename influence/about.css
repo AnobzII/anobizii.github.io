@@ -13,7 +13,17 @@ h1 {
 p {
 	color:#2E4B65;
 	}
-
+button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: #C0CEDD;
+  border: none;
+}
+button:hover {
+  background: #E0E6EE;
+}
 #content {
     margin: 113px 0px 0px 0px;
     display: block;
@@ -43,6 +53,7 @@ p {
 	background-color: #C0CEDD;
     }
 	
+
 
 
 * html #header {position: absolute;}
