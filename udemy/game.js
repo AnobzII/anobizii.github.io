@@ -54,7 +54,7 @@ startGame = () => {
 
 getNewQuestion = () => {
     if(availableQuesions.length == 0 || questionCounter >= MAX_QUESTIONS){
-        return window.location.assign('/end.html');
+        return window.location.assign('/udemy/end.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
