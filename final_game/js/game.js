@@ -178,8 +178,6 @@ const textNodes = [
         ]
     }
     ]
-
-    console.log(score)
     
 startGame()
         
