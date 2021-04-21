@@ -1,0 +1,201 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flexbox;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #A1B6CC;
+}
+
+.header {
+  background-color: #A1B6CC;
+  display: flexbox;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  border-bottom: 5px;
+  border: 1px solid #E0E6EE;
+  color: #25394B;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 160px;
+  display: flexbox;  
+  position: fixed; 
+  /*z-index: 1; */
+  top: 99px; 
+  left: 0;
+  background-color: #A1B6CC; 
+  /*overflow-x: hidden; Disable horizontal scroll */
+  padding-top: 20px;
+  border-right: 5px;
+  border: 1px solid #E0E6EE;
+  text-align: center;
+  color: #25394B;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #A1B6CC;
+  color: #25394B;
+  text-align: center;
+  border: 1px solid #E0E6EE;
+}
+
+.sidebar {
+  width: 160px;
+  height: 100%;
+  float: right;
+  display: flexbox;
+  background-color: #A1B6CC;
+  color: #25394B;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #E0E6EE;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gamecontainer {
+  margin-left: auto;
+  margin-top: 250px;
+  margin-right: auto;
+  width: 800px;
+  max-width: 80%;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #C0CEDD
+  border: 1px solid hsl(200, 100%, 30%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #25394B;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: #E0E6EE;
+}
+
+.fixed-header, .fixed-footer{
+  width: 100%;
+  position: fixed;        
+  background: #A1B6CC;
+  padding: 10px 0;
+  color: #25394B;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@font-face {
+  font-family: 'billabongregular';
+  src: url('font/billabong-webfont.woff2') format('woff2'),
+       url('font/billabong-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'billabongregular', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  display: block;
+  font-size: 2.5em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'billabongregular', Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'billabongregular', Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'billabongregular', Arial, Helvetica, sans-serif;
+}
+
+h5 {
+  display: block;
+  font-size: 1em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'billabongregular', Arial, Helvetica, sans-serif;
+}

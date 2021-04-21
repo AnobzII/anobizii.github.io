@@ -1,0 +1,35 @@
+[
+    {
+        "question": "You have been approached by the following brands to promote their brands, which one would you like to use?",
+        "choice1": "Cocky-Cola",
+        "choice2": "Slim-Slow",
+        "choice3": "EggsBox",
+        "choice4": "Popular Clothing Brand",
+        "max_points": 3,
+        "med_points": 4,
+        "min_points": 1,
+        "lose_points": 2
+    },
+    {
+        "question": "Question 2",
+        "choice1": "Answer 1",
+        "choice2": "Answer 2",
+        "choice3": "Answer 3",
+        "choice4": "Answer 4",
+        "max_points": 2,
+        "med_points": 3,
+        "min_points": 1,
+        "lose_points": 4 
+    },
+    {
+        "question": "Question 3",
+        "choice1": "Answer 1",
+        "choice2": "Answer 2",
+        "choice3": "Answer 3",
+        "choice4": "Answer 4",
+        "max_points": 3,
+        "med_points": 2,
+        "min_points": 4,
+        "lose_points": 1
+    }
+]

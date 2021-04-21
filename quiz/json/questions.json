@@ -1,0 +1,13 @@
+[
+    {
+        "question": "You have been approached by the following brands to promote their brands, which one would you like to use?",
+        "choice1": "Cocky-Cola",
+        "choice2": "Slim-Slow",
+        "choice3": "EggsBox",
+        "choice4": "Popular Clothing Brand",
+        "max_points": 3,
+        "med_points": 4,
+        "min_points": 1,
+        "lose_points": 4
+    }
+]
