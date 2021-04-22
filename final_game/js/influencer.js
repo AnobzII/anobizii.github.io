@@ -1,4 +1,4 @@
-const textElement = document.getElementById('text')
+const influenceElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 const scoreElement = document.getElementById('score')
 
@@ -8,21 +8,21 @@ let score = 1000
 
 function startGame() {
     score = 1000
-    showTextNode(1)
+    startInfluence(1)
 }
 
 //show the options buttons and then when they're clicked make them move to the next item in the list which is assigned to them
 
-function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-    textElement.innerText = textNode.text
+function startInfluence(influenceIndex) {
+    const influence = influences.find(influence => influence.id === influenceIndex)
+    influenceElement.innerText = influence.text
     while (optionButtonsElement.firstChild) {
       optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
 
 
   
-    textNode.options.forEach(option => {
+    influence.options.forEach(option => {
       if (showOption(option)) {
         const button = document.createElement('button')
         button.innerText = option.text
@@ -41,13 +41,13 @@ function showOption(option) {
 
   
 function selectOption(option) {
-    const nextTextNodeId = option.nextText
+    const nextinfluenceId = option.nextText
     //if any of the options return a nextText of less than 0 then start at the beginning again
-    if (nextTextNodeId <= 0) {
+    if (nextinfluenceId <= 0) {
       return startGame()
     }
     //score = Object.assign(score, option.setScore)
-    showTextNode(nextTextNodeId)
+    startInfluence(nextinfluenceId)
   }
 
 //create teh list with all the questions and answers.  Blank template below for use to add options into the code
@@ -79,7 +79,7 @@ function selectOption(option) {
         ]
         },*/
 
-const textNodes = [
+const influences = [
     {
         id: 1,
         text: 'Welcome to the game, you have started creating a small following using your social media channels and have 1000 followers, its time to pick what you would like to promote:',
