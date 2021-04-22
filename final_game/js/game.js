@@ -4,10 +4,14 @@ const scoreElement = document.getElementById('score')
 
 let score = 1000
 
+//The below code displays the 1st item in the text nodes list and starts the game with the 1st item in the list
+
 function startGame() {
-    score = 0
+    score = 1000
     showTextNode(1)
 }
+
+//show the options buttons and then when they're clicked make them move to the next item in the list which is assigned to them
 
 function showTextNode(textNodeIndex) {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -15,6 +19,8 @@ function showTextNode(textNodeIndex) {
     while (optionButtonsElement.firstChild) {
       optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
+
+
   
     textNode.options.forEach(option => {
       if (showOption(option)) {
@@ -26,19 +32,53 @@ function showTextNode(textNodeIndex) {
       }
     })
   }
-  
+
+//display the buttons using the code below  
+
 function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
+    return option.requiredState == null || option.requiredState(score)
   }
+
+  
 function selectOption(option) {
     const nextTextNodeId = option.nextText
+    //if any of the options return a nextText of less than 0 then start at the beginning again
     if (nextTextNodeId <= 0) {
       return startGame()
     }
     //score = Object.assign(score, option.setScore)
     showTextNode(nextTextNodeId)
   }
-  
+
+//create teh list with all the questions and answers.  Blank template below for use to add options into the code
+
+/*{
+        id: ,
+        text: '',
+        options: [
+            {
+                text: '',
+                nextText: ,
+                setScore: score+
+            },
+            {
+                text: '',
+                nextText: ,
+                setScore: score+
+            },
+            {
+                text: '',
+                nextText: ,
+                setScore: score-
+            },
+            {
+                text: '',
+                nextText: ,
+                setScore: score+
+            }
+        ]
+        },*/
+
 const textNodes = [
     {
         id: 1,
@@ -152,17 +192,53 @@ const textNodes = [
             },
             {
                 text: 'NaKaTo',
-                nextText: 17,
+                nextText: 20,
                 setScore: score+1000
             }
         ]
         },
+        {
+            id: 6,
+            text: 'You chose Eggsbox, which is FIRE right now, your followers reach 3000, what would you like to highlight now with your Eggsbox sponsorship?',
+            options: [
+                {
+                    text: 'Call of Booty Streaming',
+                    nextText: 20,
+                    setScore: score+1000
+                },
+                {
+                    text: 'MineShaft Streaming',
+                    nextText: 19,
+                    setScore: score+250
+                },
+                {
+                    text: 'Fantastic Mr Fox Streaming',
+                    nextText: 21,
+                    setScore: score-1000
+                },
+                {
+                    text: 'Flight Sim Streaming',
+                    nextText: 18,
+                    setScore: score-500
+                }
+            ]
+            },
         {
         id: 8,
         text: 'You chose MicroShaft Computing and your followers fled because they thought that was a far too risky brand, Game over you lost',
         options: [
             {
                 text: 'Restart',
+                nextText: -1
+            }
+        ]
+        },
+        {
+        id: 20,
+        text: 'Your followers have now hit the limit for your chosen subject matter, why not switch it up and try another branch.  Have a look at whats out there or just take a break and enjoy what you have in the moment...',
+        options: [
+            {
+                text: 'Change Focus',
                 nextText: -1
             }
         ]
@@ -176,9 +252,33 @@ const textNodes = [
                 nextText: -1
             }
         ]
-    }
+        },
+        {
+            id: 19,
+            text: 'You Chose MineShaft Streaming, congratulations you got 250 followers taking your total to 3250.  What would you like to do next?',
+            options: [
+                {
+                    text: 'Stream more MineShaft',
+                    nextText: 18,
+                    setScore: score+250
+                },
+                {
+                    text: 'Stream Another Game',
+                    nextText: 20,
+                    setScore: score+1000
+                },
+                {
+                    text: 'Start Again',
+                    nextText: -1,
+                    setScore: score-1000
+                }
+                
+            ]
+            }
     ]
-    
+
+//last thing the program needs to do is actually start the game
+
 startGame()
         
     

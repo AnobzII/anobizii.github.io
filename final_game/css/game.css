@@ -30,7 +30,7 @@ body {
   height: 100%; 
   width: 160px;
   display: flexbox;  
-  position: fixed; 
+  position: fixed;
   /*z-index: 1; */
   top: 99px; 
   left: 0;
@@ -64,6 +64,7 @@ body {
   text-align: center;
   align-items: center;
   border: 1px solid #E0E6EE;
+  /*position: ;*/
 }
 .container {
   width: 80%;
@@ -132,7 +133,8 @@ body {
 }
 
 
-
+/*font kit and font came from https://fontsfree.net/billabong-font-download.html & https://www.fontsquirrel.com/tools/webfont-generator 
+Font CSS code adapted from - https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website*/
 @font-face {
   font-family: 'billabongregular';
   src: url('font/billabong-webfont.woff2') format('woff2'),
